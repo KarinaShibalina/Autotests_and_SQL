@@ -14,8 +14,6 @@ def create_order():
 def get_order():
     params = {"t": create_order()}
     req = requests.get(configuration.URL_SERVICE+configuration.GET_ORDER, params=params)
-    return req.status_code
-
-print(get_order())
+    return req
 
 
